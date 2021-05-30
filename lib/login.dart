@@ -38,8 +38,42 @@ class _LoginState extends State<Login> {
             ),
             SizedBox(height: 8),
             Container(
-              child: Text("Sign In"),
-            )
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(vertical: 16),
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    Colors.blue,
+                    Colors.white,
+                  ]),
+                  borderRadius: BorderRadius.circular(20)),
+              child: Text(
+                "Sign In",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(height: 8),
+            Container(
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(vertical: 16),
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    Colors.blue,
+                    Colors.white,
+                  ]),
+                  borderRadius: BorderRadius.circular(20)),
+              child: Text(
+                "Sign In with Google",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
