@@ -17,13 +17,28 @@ class _LoginState extends State<Login> {
         child: Column(
           children: [
             TextField(
-              decoration: InputDecoration(
-                  hintText: "Email", hintStyle: TextStyle(color: Colors.white)),
+              style: inputFieldtextStyle(),
+              decoration: textFieldInputDecoration("Email"),
             ),
             TextField(
-              decoration: InputDecoration(
-                  hintText: "Password",
-                  hintStyle: TextStyle(color: Colors.white)),
+                style: inputFieldtextStyle(),
+                decoration: textFieldInputDecoration("Password")),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              alignment: Alignment.centerRight,
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+                child: Text(
+                  "Forgot password?",
+                  style: inputFieldtextStyle(),
+                ),
+              ),
+            ),
+            SizedBox(height: 8),
+            Container(
+              child: Text("Sign In"),
             )
           ],
         ),

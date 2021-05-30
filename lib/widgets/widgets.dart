@@ -9,3 +9,18 @@ Widget appBarMain(BuildContext context) {
     ),
   );
 }
+
+InputDecoration textFieldInputDecoration(String hint) {
+  return InputDecoration(
+      hintText: hint,
+      hintStyle: TextStyle(color: Colors.white),
+      focusedBorder: UnderlineInputBorder(
+        borderSide: BorderSide(color: Colors.white),
+      ),
+      enabledBorder:
+          UnderlineInputBorder(borderSide: BorderSide(color: Colors.white)));
+}
+
+TextStyle inputFieldtextStyle() {
+  return TextStyle(color: Colors.white);
+}
