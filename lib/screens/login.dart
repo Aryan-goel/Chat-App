@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
                   decoration: BoxDecoration(
                       gradient: LinearGradient(colors: [
                         Colors.blue,
-                        Colors.blue,
+                        Colors.white,
                       ]),
                       borderRadius: BorderRadius.circular(25)),
                   child: Text(
