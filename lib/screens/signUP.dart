@@ -1,3 +1,4 @@
+import 'package:chat_app/screens/chatRoom.dart';
 import 'package:chat_app/services/auth.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,10 @@ class _SignUpState extends State<SignUp> {
           .signupwithEmailAndPassword(
               emailController.text, passwordController.text)
           .then((val) {
-        print("${val.uid}");
+        print("$val");
+
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => ChatRoom()));
       });
     }
   }
