@@ -8,6 +8,7 @@ class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   AppUse? _userfromFirebase(FirebaseUser user) {
+    // ignore: unnecessary_null_comparison
     return user != null ? AppUse(userId: user.uid) : null;
   }
 
