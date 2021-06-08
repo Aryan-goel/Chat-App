@@ -1,4 +1,5 @@
 // @dart=2.9
+import 'package:chat_app/helper/authenticate.dart';
 import 'package:chat_app/screens/login.dart';
 import 'package:chat_app/screens/signUP.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,6 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.grey[900],
           primarySwatch: Colors.blue,
         ),
-        home: SignUp());
+        home: Authenticate());
   }
 }
